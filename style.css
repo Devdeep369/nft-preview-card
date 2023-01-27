@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap');
+
+:root {
+    --primary-blue-color: hsl(215, 51%, 70%);
+    --primary-cyan-color: hsl(178, 100%, 50%);
+    --main-bg-color: hsl(217, 54%, 11%);
+    --card-bg-color: hsl(216, 50%, 16%);
+    --line-color: hsl(215, 32%, 27%);
+    --white-color: hsl(0, 0%, 100%);
+
+    --fs-p: 18px;
+    --fw-300: 300;
+    --fw-400: 400;
+    --fw-600: 600;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Outfit', sans-serif;
+    width: 295px;
+    min-height: 100vw;
+    margin: auto;
+    background-color: black;
+}
+
+.preview {
+    background-color: var(--card-bg-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 10px;
+    max-width: 600px;
+}
+
+.preview .photo img{
+    margin: 1rem;
+    border-radius: 10px;
+}
+
+.preview-card-txt {
+    margin: 1rem;
+    color: var(--white-color);
+    line-height: 1.5;
+    border-bottom: 1px solid var(--line-color);
+    margin-top: -5px;
+}
+
+.preview-card-txt .title {
+    padding-bottom: 0.5rem;
+}
+
+.preview-card-txt .title:is(:hover, :active) {
+    color: var(--primary-cyan-color);
+    cursor: pointer;
+}
+
+.preview-card-txt .p-txt {
+    color: var(--primary-blue-color);
+    font-size: 0.89rem;
+    padding-bottom: 0.5rem;
+    font-weight: var(--fw-300);
+}
+
+.preview-card-txt .price {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 0.5rem;
+    text-align: center;
+    padding-bottom: 1rem;
+}
+
+.preview-card-txt .price .cyan {
+    color: var(--primary-cyan-color);
+    font-weight: var(--fw-600);
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.preview-card-txt .price .cyan span {
+    font-size: 0.9rem;
+    font-weight: var(--fw-400);
+    margin-left: 5px;
+}
+
+.preview-card-txt .price .gray {
+    color: var(--primary-blue-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.preview-card-txt .price .gray span {
+    font-size: 0.9rem;
+    margin-left: 5px;
+}
+
+.footer-txt {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0rem;
+    padding: 1rem;
+    float: left;
+    margin-top: -20px;
+    margin-right: 50px;
+    padding-bottom: 25px;
+}
+
+.footer-txt .img {
+    border: 1px solid var(--white-color);
+    border-radius: 50px;
+    /* margin-right: 50px; */
+    display: inline-block;
+}
+
+.footer-txt p {
+    color: var(--primary-blue-color);
+    margin-left: 20px;
+    font-weight: var(--fw-300);
+    font-size: 0.9rem;
+}
+
+.footer-txt p .white {
+    color: var(--white-color);
+}
