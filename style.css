@@ -27,6 +27,9 @@ body {
     margin: auto;
     background-color: black;
     padding: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .preview {
@@ -37,7 +40,6 @@ body {
     flex-direction: column;
     border-radius: 10px;
     max-width: 295px;
-    margin: auto;
 }
 
 .preview .photo img{
@@ -135,4 +137,9 @@ body {
 
 .footer-txt p .white {
     color: var(--white-color);
+}
+
+.footer-txt p .white:hover {
+    color: var(--primary-cyan-color);
+    cursor: pointer;
 }
