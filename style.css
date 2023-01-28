@@ -22,10 +22,11 @@
 
 body {
     font-family: 'Outfit', sans-serif;
-    width: 295px;
+    /* width: 295px; */
     min-height: 100vh;
     margin: auto;
     background-color: black;
+    padding: 80px;
 }
 
 .preview {
@@ -35,7 +36,8 @@ body {
     align-items: center;
     flex-direction: column;
     border-radius: 10px;
-    max-width: 350px;
+    max-width: 295px;
+    margin: auto;
 }
 
 .preview .photo img{
