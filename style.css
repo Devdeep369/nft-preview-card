@@ -23,7 +23,7 @@
 body {
     font-family: 'Outfit', sans-serif;
     width: 295px;
-    min-height: 100vw;
+    min-height: 100vh;
     margin: auto;
     background-color: black;
 }
@@ -35,12 +35,12 @@ body {
     align-items: center;
     flex-direction: column;
     border-radius: 10px;
-    max-width: 600px;
+    max-width: 350px;
 }
 
 .preview .photo img{
     margin: 1rem;
-    border-radius: 10px;
+    border-radius: 10px
 }
 
 .preview-card-txt {
